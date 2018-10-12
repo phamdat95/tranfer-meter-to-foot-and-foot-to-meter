@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter your value: <input type="number" id="tranferFoot" placeholder="Foot" oninput="converterFoot(this.value)" > &nbsp;&nbsp;
+Meter: <span id="outPutMeter"></span><br><br>
+Enter your value: <input type="number" id="tranferMeter" placeholder="Meter" oninput="converterMeter(this.value)" > &nbsp;&nbsp;
+Foot: <span id="outPutFoot"></span>
+<script>
+    function converterFoot(value) {
+        value = parseFloat(value);
+        document.getElementById('outPutMeter').innerHTML = value*0.305;
+    }
+    function converterMeter(value) {
+        value = parseFloat(value);
+        document.getElementById('outPutFoot').innerHTML = value*3.279;
+    }
+</script>
+</body>
+</html>
